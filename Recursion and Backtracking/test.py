@@ -1,10 +1,11 @@
-def calcu_array_sum(nums, idx):
-    if idx == len(nums) - 1:
-        return nums[idx]
+def read_lab():
+    row = int(input())
+    col = int(input())
+    lab = []
 
-    return nums[idx] + calcu_array_sum(nums, idx + 1)
+    for x in range(row):
+        lab.append(list(input()))
 
+    return lab
 
-nums = [int(x) for x in input().split()]
-
-print(calcu_array_sum(nums, 0))
+print(read_lab())
